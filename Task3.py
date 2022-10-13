@@ -35,7 +35,7 @@ def find_five(line, num_5, falses):
 def new_find_five(string):
     if string.isdigit(5):
         string.upper()
-    data = open('list.txt', 'w')
+    data = open('list.txt', 'a')
     data.writelines(list_of_students)
     data.close()
 
@@ -57,7 +57,7 @@ with open('list.txt', 'r') as file:
 file.close()
 
 print(New_list_of_students)
-data = open('list.txt', 'w')
+data = open('list.txt', 'a')
 data.writelines(New_list_of_students)
 data.close()
 
